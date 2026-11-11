@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>James Hayes Films – Brighton and Hove Videographer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF8F6; --alt:#F2EDE7; --ink:#1F1B18; --muted:#5E5852; --line:#DAD3CC; --btn:#F0E9E1; --btn-ink:#1F1B18; --green:#1E3A2A; --green-ink:#EEF0E4;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif; --sans:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  color-scheme:light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#111915;--alt:#17221B;--ink:#ECEFE4;--muted:#A8B3A3;--line:#2B3A31;--btn:#2A3E31;--btn-ink:#ECEFE4;--green:#0C130F;color-scheme:dark}
+}
+:root[data-theme="dark"]{--paper:#111915;--alt:#17221B;--ink:#ECEFE4;--muted:#A8B3A3;--line:#2B3A31;--btn:#2A3E31;--btn-ink:#ECEFE4;--green:#0C130F;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:500 1.2rem/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;line-height:1.15}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.ph{background-size:cover;background-repeat:no-repeat;background-color:var(--alt)}
+
+.hero{position:relative;height:clamp(440px,74vh,740px);background:#243A2C}
+.hero .bg{position:absolute;inset:0;background-position:50% 38%}
+.hero::after{content:"";position:absolute;left:0;right:0;top:0;height:170px;background:linear-gradient(rgba(8,16,11,.6),rgba(8,16,11,0))}
+.top{position:absolute;z-index:2;left:0;right:0;top:0;padding:30px 5vw;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;color:#fff}
+.top nav{display:flex;gap:clamp(26px,5vw,80px)}
+.top nav.r{justify-content:flex-end}
+.top a{text-decoration:none;font:700 .85rem var(--serif);letter-spacing:.28em;text-transform:uppercase}
+.top a:hover{opacity:.75}
+.top .logo{text-align:center;font:500 clamp(1.4rem,2.4vw,2rem)/1 var(--serif);letter-spacing:.3em;padding-left:.3em}
+.logo i{display:block;font:italic 400 1rem var(--serif);letter-spacing:.2em;margin-top:8px;opacity:.9}
+
+.intro{padding:76px 0 84px;text-align:center}
+.intro h1{font-size:clamp(2rem,4.2vw,3.1rem)}
+.intro p{margin-top:12px;font:600 clamp(1.1rem,1.8vw,1.35rem) var(--serif)}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,8vw,120px);align-items:center;padding:10px 0 110px}
+.portrait{aspect-ratio:3/4.1;background-position:67% 40%}
+.about h2,.contact h2{font-size:clamp(1.8rem,3.2vw,2.6rem);letter-spacing:.14em;font-weight:400}
+.quote{margin-top:42px;border-left:1px solid var(--ink);padding:6px 0 6px 38px}
+.quote p{color:var(--muted)}
+.quote p+p{margin-top:16px}
+.btn{display:inline-block;margin-top:30px;padding:15px 30px;background:var(--btn);color:var(--btn-ink);text-decoration:none;font:700 .8rem var(--serif);letter-spacing:.25em;text-transform:uppercase;box-shadow:0 1px 5px rgba(0,0,0,.14)}
+.btn:hover{filter:brightness(.96)}
+.quote .btn{margin-left:-51px}
+
+.films{background:var(--alt);padding:96px 0}
+.sec-title{text-align:center;font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:.3em;text-transform:uppercase;font-weight:400;padding-left:.3em}
+.work{margin-top:52px;display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.card{text-decoration:none;display:block}
+.thumb{position:relative;aspect-ratio:16/10}
+.thumb::after{content:"";position:absolute;right:14px;bottom:14px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.92)}
+.thumb::before{content:"";position:absolute;z-index:1;right:28px;bottom:28px;border-left:14px solid #1F1B18;border-top:8px solid transparent;border-bottom:8px solid transparent}
+.card:hover .thumb{filter:brightness(1.08)}
+.card h3{margin-top:20px;text-align:center;font-size:1.15rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+.i-derby{background-position:55% 50%}.i-leic{background-position:50% 40%}.i-suss{background-position:58% 35%}
+
+.testi{padding:96px 0 0;text-align:center}
+.testi blockquote{margin:40px auto 0;max-width:30em;font:italic 500 clamp(1.5rem,2.6vw,2.1rem)/1.5 var(--serif)}
+.testi blockquote::before{content:"“";display:block;font-size:4.5rem;line-height:.7;margin-bottom:12px;opacity:.35}
+.services{padding:100px 0}
+.svcs{margin-top:48px;display:grid;grid-template-columns:repeat(2,1fr);gap:0 90px}
+.svc{padding:26px 0;border-top:1px solid var(--line)}
+.svc h3{font-size:1.5rem;letter-spacing:.06em}
+.svc p{color:var(--muted);margin-top:6px}
+
+.contact{background:var(--green);color:var(--green-ink);text-align:center;padding:100px 0 40px}
+.contact p{max-width:46ch;margin:18px auto 0;opacity:.85}
+.contact .btn{background:#F0E9E1;color:#1F1B18}
+.details{margin-top:60px;padding-top:30px;border-top:1px solid rgba(238,240,228,.22);display:flex;justify-content:center;gap:14px 60px;flex-wrap:wrap;font-size:1.1rem}
+.details span{display:block;font:700 .75rem var(--serif);letter-spacing:.25em;text-transform:uppercase;opacity:.7}
+.copy{margin-top:52px;font-size:1rem;opacity:.6}
+
+@media (max-width:860px){
+  .hero{height:clamp(340px,90vw,420px)}
+  .hero .bg{background-position:42% 30%}
+  .top{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 24px;padding:22px 16px}
+  .top .logo{order:-1;flex-basis:100%}
+  .top nav{gap:22px}.top a{font-size:.78rem;letter-spacing:.22em}
+  .about,.work,.svcs{grid-template-columns:1fr}
+  .about{gap:44px}
+  .quote{padding-left:24px}.quote .btn{margin-left:0}
+  .svcs{gap:0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.i-hero{background-image:url("images/hero-derbyshire.jpg")}
+.i-portrait{background-image:url("images/james-hayes.jpg")}
+.i-derby{background-image:url("images/derbyshire-wedding.jpg")}
+.i-leic{background-image:url("images/leicester-wedding.jpg")}
+.i-suss{background-image:url("images/sussex-wedding.jpg")}
+</style>
+</head>
+<body>
+<div class="hero" id="top">
+  <div class="bg ph i-hero" role="img" aria-label="A smiling couple holding a baby, with green hills behind them"></div>
+  <div class="top">
+    <nav aria-label="Main"><a href="#top">Home</a><a href="#about">About</a></nav>
+    <a class="logo" href="#top">JAMES HAYES<i>films</i></a>
+    <nav class="r" aria-label="More"><a href="#films">Films</a><a href="#contact">Contact</a></nav>
+  </div>
+</div>
+
+<main>
+  <section class="intro">
+    <div class="wrap">
+      <h1>Videographer in Brighton and Hove</h1>
+      <p>Wedding films that feel like the day did.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div class="portrait ph i-portrait" role="img" aria-label="James holding a glass bottle with a leaf in it"></div>
+      <div>
+        <h2>Hi!</h2>
+        <div class="quote">
+          <p>I’m glad you found your way to my website, where you can see examples of my work for weddings, events and narrative projects. I grew up in Sussex and fell in love with photography and filmmaking from a young age.</p>
+          <p>At 13 I saved up from a paper round to buy a JVC Everio camcorder and filmed my family’s life every day, which is where my love of documentary filmmaking began. After studying for a Bachelor of Arts, I’ve worked in videography and editing ever since, on documentaries and on weddings and events all over the country.</p>
+          <a class="btn" href="mailto:contact@jameshayesfilms.com">Let’s talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="films" id="films">
+    <div class="wrap">
+      <h2 class="sec-title">Films</h2>
+      <div class="work">
+        <a class="card" href="https://youtu.be/ID6qsqWX7og" target="_blank" rel="noopener"><div class="thumb ph i-derby" role="img" aria-label="Still from the Derbyshire wedding film: a smiling couple with a baby"></div><h3>Derbyshire</h3></a>
+        <a class="card" href="https://www.youtube.com/watch?v=vK4lY0uUZfc" target="_blank" rel="noopener"><div class="thumb ph i-leic" role="img" aria-label="Still from the Leicester wedding film: a couple laughing as guests throw confetti"></div><h3>Leicester</h3></a>
+        <a class="card" href="https://www.youtube.com/watch?v=qOWSZKsg230" target="_blank" rel="noopener"><div class="thumb ph i-suss" role="img" aria-label="Still from the Sussex wedding film: a close-up of the bride looking over her shoulder"></div><h3>Sussex</h3></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testi" id="testimonials">
+    <div class="wrap">
+      <h2 class="sec-title">Testimonials</h2>
+      <blockquote>“James did such a wonderful job capturing our wedding day, we made it clear what we wanted and he managed to capture everything while letting the day continue naturally.”</blockquote>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="wrap">
+      <h2 class="sec-title">What I film</h2>
+      <div class="svcs">
+        <div class="svc"><h3>Weddings</h3><p>Full-day coverage with a highlight film and a longer edit of the speeches and vows.</p></div>
+        <div class="svc"><h3>Brand and business films</h3><p>Short films that show what you do and who does it, cut for your website and social channels.</p></div>
+        <div class="svc"><h3>Events</h3><p>Conferences, launches and parties captured with discreet camera work and clean audio.</p></div>
+        <div class="svc"><h3>Social clips</h3><p>Vertical and square edits from a single shoot, ready to post.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Tell me about your project</h2>
+    <p>Send the date, place and what you have in mind. I reply within two working days.</p>
+    <a class="btn" href="mailto:contact@jameshayesfilms.com">Email me</a>
+    <div class="details">
+      <div><span>Email</span><a href="mailto:contact@jameshayesfilms.com">contact@jameshayesfilms.com</a></div>
+      <div><span>Phone</span><a href="tel:+447305154412">07305 154412</a></div>
+      <div><span>Instagram</span><a href="https://www.instagram.com/jameshayesfilms/" target="_blank" rel="noopener">@jameshayesfilms</a></div>
+      <div><span>Based in</span>Brighton and Hove</div>
+    </div>
+    <p class="copy">© 2026 James Hayes Films</p>
+  </div>
+</section>
+</body>
+</html>
